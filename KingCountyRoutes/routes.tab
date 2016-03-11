@@ -1,0 +1,12 @@
+!table
+!version 300
+!charset WindowsLatin1
+
+Definition Table
+  Type NATIVE Charset "WindowsLatin1"
+  Fields 5
+    ROUTE Char (11) ;
+    RTE_NUM Char (3) ;
+    RTE_PART Char (6) ;
+    SVC_TYPE Char (2) ;
+    Shape_len Decimal (19, 11) ;
