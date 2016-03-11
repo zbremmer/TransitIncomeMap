@@ -3,8 +3,9 @@
 #install.packages("RJSONIO")
 library(RJSONIO)
 
-#read in JSON
-rawData <- fromJSON("http://api.census.gov/data/2014/acs5/profile?get=DP03_0062E&for=zip+code+tabulation+area:*&key=faf52bc88216c93a18350a5dff192b7c17dc1a79")
+#Read in JSON
+#Add key to URL  
+rawData <- fromJSON("http://api.census.gov/data/2014/acs5/profile?get=DP03_0062E&for=zip+code+tabulation+area:*&key=******")
 
 #Deal with any null values 
 incomeData <- lapply(rawData, function(x){x[sapply(x, is.null)]<-NA 
