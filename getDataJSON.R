@@ -1,6 +1,6 @@
 # Get census income data and convert to data frame
 
-#install.packages("RJSONIO")
+install.packages("RJSONIO")
 library(RJSONIO)
 
 #Read in JSON
