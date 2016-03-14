@@ -6,10 +6,10 @@ Currently exploring mapping data for Seattle, Philadelphia, DC, and Baltimore.
 
 1. R script written to get data from census.gov API and save as CSV. Includes median income by zip code tabulation area.
 2. King County Transit routes converted to points for Tableau using *_shapetotab --simplify routes.tab_* where Esri shp was converted to .tab in MapInfo. Currently has ~55k points. 
+3. Zip codes added to route_Points using "update column" in MapInfo to join with zipcode polygon table. 
 
 **TODO:**
-
-1. Determine how to blend route locations with income data.
+1. Line Segment and Point Order are not in the order of the actual route. Need to figure out another way to extract route direction (or manually select points and add to new database / set). Cannot move forward until this piece is completed. 
 2. Decide which routes to include (major? express? all?)
 
 **Notes:**
