@@ -7,8 +7,10 @@ The Tableau visualization relies on MapBox to plot the polylines for bus routes 
 **Completed:**
 
 1. R script written to get data from census.gov API and save as CSV. Includes median income by zip code tabulation area.
-2. King County Transit routes converted to points for Tableau using *_shapetotab --simplify routes.tab_* where Esri shp was converted to .tab in MapInfo. Currently has ~55k points. 
-3. Zip codes added to route_Points using "update column" in MapInfo to join with zipcode polygon table. 
+2. King County Transit routes converted to points for Tableau using *_shapetotab --simplify routes.tab_* where Esri shp was converted to .tab in MapInfo. Currently has ~55k points. (unused)
+3. Zip codes added to route_Points using "update column" in MapInfo to join with zipcode polygon table. (unused)
+4. Route maps created in MapBox for routes 159, 167, 177, 216, 242, 271, and 312.
+5. Bus stop points for routes selected, ordered, and assigned proper zipcode values.
 
 **Notes:**
 
