@@ -1,16 +1,14 @@
 ### TransitIncomeMap
 
-Currently exploring mapping data for Seattle, Philadelphia, DC, and Baltimore.
+This is a sample project to map median income by zip code along major public transit routes in Seattle. Routes and bus stops were selected based on total coverage and ease of mapping. This project is a proof of concept rather than a detailed analysis of income. Future refinements to this visualization would include ranking and selecting routes/bus stops based on total distance covered, zipcodes covered, etc.
+
+The Tableau visualization relies on MapBox to plot the polylines for bus routes and uses Tableau to map points and income. Sheet swapping is used to switch between sheets based upon filter selections. 
 
 **Completed:**
 
 1. R script written to get data from census.gov API and save as CSV. Includes median income by zip code tabulation area.
 2. King County Transit routes converted to points for Tableau using *_shapetotab --simplify routes.tab_* where Esri shp was converted to .tab in MapInfo. Currently has ~55k points. 
 3. Zip codes added to route_Points using "update column" in MapInfo to join with zipcode polygon table. 
-
-**TODO:**
-1. Line Segment and Point Order are not in the order of the actual route. Need to figure out another way to extract route direction (or manually select points and add to new database / set). Cannot move forward until this piece is completed. 
-2. Decide which routes to include (major? express? all?)
 
 **Notes:**
 
